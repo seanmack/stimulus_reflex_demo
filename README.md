@@ -1,24 +1,35 @@
-# README
+# Twitter clone using StimulusReflex
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just a quick demo of a basic StimulusReflex demo.
 
-Things you may want to cover:
+See the source [video](https://www.youtube.com/watch?v=F5hA79vKE_E) I followed to make this.
 
-* Ruby version
+---
 
-* System dependencies
+## System dependencies
 
-* Configuration
+* rails
+* redis
+* yarn
+* postgres
 
-* Database creation
+---
 
-* Database initialization
+## Steps
 
-* How to run the test suite
+* clone this repo, `cd` into the directory
 
-* Services (job queues, cache servers, search engines, etc.)
+* `bundle`
 
-* Deployment instructions
+* `rails db:migrate`
 
-* ...
+* `rails s`
+
+* `bin/webpack-dev-server`
+
+* Open `http://localhost:3000/posts` and create a post
+
+* Open `http://localhost:3000/posts` in another window, e.g. incognito mode.
+
+* Put the windows side-by-side, click "Repost" and "Like," and watch the magic.
+
